@@ -3,9 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Messenger.Api.Entities.Chat;
 
-/// <summary>
-/// Хто і коли прочитав повідомлення в чаті
-/// </summary>
 [Table("tbl_chat_message_reads")]
 public class ChatMessageReadEntity
 {
@@ -17,3 +14,4 @@ public class ChatMessageReadEntity
 
     public DateTime ReadAt { get; set; } = DateTime.UtcNow;
 }
+

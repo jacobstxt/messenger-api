@@ -12,6 +12,6 @@ public class AuthMapper : Profile
         CreateMap<RegisterModel, UserEntity>()
                 .ForMember(x => x.UserName, opt => opt.MapFrom(x => x.Email));
         CreateMap<SeederUserModel, UserEntity>()
-            .ForMember(x => x.UserName, opt => opt.MapFrom(x => x.Email));
+                .ForMember(x => x.UserName, opt => opt.MapFrom(x => x.Email));
     }
 }

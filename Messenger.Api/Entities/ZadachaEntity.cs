@@ -17,5 +17,4 @@ public class ZadachaEntity : BaseEntity<long>
     public long UserId { get; set; }
     public UserEntity? User { get; set; }
 
-
 }

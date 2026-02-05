@@ -6,7 +6,6 @@ using Messenger.Api.Interfaces;
 using Messenger.Api.Models.Seeder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Data;
 using System.Text.Json;
 
 namespace Messenger.Api.Data;
@@ -96,6 +95,5 @@ public static class DbSeeder
             context.ChatTypes.AddRange(types);
             await context.SaveChangesAsync();
         }
-
     }
 }

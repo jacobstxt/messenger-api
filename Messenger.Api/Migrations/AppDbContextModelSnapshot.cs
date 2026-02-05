@@ -502,7 +502,7 @@ namespace Messenger.Api.Migrations
             modelBuilder.Entity("Messenger.Api.Entities.ZadachaEntity", b =>
                 {
                     b.HasOne("Messenger.Api.Entities.Identity.UserEntity", "User")
-                        .WithMany("Zadachas")
+                        .WithMany("Zadachi")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -578,7 +578,7 @@ namespace Messenger.Api.Migrations
 
                     b.Navigation("UserRoles");
 
-                    b.Navigation("Zadachas");
+                    b.Navigation("Zadachi");
                 });
 #pragma warning restore 612, 618
         }

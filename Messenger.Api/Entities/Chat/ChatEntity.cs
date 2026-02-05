@@ -1,11 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Messenger.Api.Entities.Identity;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Messenger.Api.Entities.Chat;
 
-/// <summary>
-/// Чат в якому відбувається обмін повідомленнями
-/// </summary>
 [Table("tbl_chats")]
 public class ChatEntity : BaseEntity<long>
 {

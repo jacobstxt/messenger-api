@@ -4,9 +4,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Messenger.Api.Entities.Chat;
 
-/// <summary>
-/// Повідомлення в чаті - хто відправив, в який чат, текст повідомлення, можливе вкладення
-/// </summary>
 [Table("tbl_chat_messages")]
 public class ChatMessageEntity : BaseEntity<long>
 {
@@ -34,3 +31,4 @@ public class ChatMessageEntity : BaseEntity<long>
 
     public bool IsEdited { get; set; } = false;
 }
+

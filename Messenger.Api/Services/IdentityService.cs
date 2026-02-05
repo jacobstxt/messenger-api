@@ -14,6 +14,6 @@ public class IdentityService(IHttpContextAccessor httpContextAccessor,
             throw new UnauthorizedAccessException("User is not authenticated.");
         var user = await userManager.FindByEmailAsync(email);
 
-        return user!.Id;
+        return user.Id;
     }
 }
